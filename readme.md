@@ -1,21 +1,41 @@
-## Laravel PHP Framework
+## Laravel Sunrise
 
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/version.png)](https://packagist.org/packages/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.png)](https://packagist.org/packages/laravel/framework) [![Build Status](https://travis-ci.org/laravel/framework.png)](https://travis-ci.org/laravel/framework) [![License](https://poser.pugx.org/laravel/framework/license.png)](https://packagist.org/packages/laravel/framework) 
+Laravel Sunrise bundles the following packages together to help you get started.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+* [Laravel](https://github.com/laravel/laravel)
+* [Bower](https://github.com/bower/bower)
+    * [Twitter Bootstrap](https://github.com/twbs/bootstrap)
+    * [jQuery](https://github.com/jquery/jquery)
+    * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+    * [LESS Hat](https://github.com/csshat/lesshat)
+* [Grunt](https://github.com/gruntjs/grunt)
+    * [LESS](https://github.com/less/less.js)
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+### Install
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+* You will need a working [Laravel environment](http://laravel.com/docs/installation), [Node.js installation](http://nodejs.org/download/) and [Bower installation](http://bower.io/).
 
-## Official Documentation
+* Clone and create an instance of this.
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+        curl https://raw.github.com/sjlu/laravel-sunrise/master/install.sh | bash -s folder
 
-### Contributing To Laravel
+    * You can replace `folder` with any name you like.
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+* Install dependencies.
+
+        curl -sS https://getcomposer.org/installer | php
+        php composer.phar install
+        npm install
+        bower install
+
+* Start compiler to concat your scripts and compile your LESS.
+
+        grunt
+
+### Contribute
+
+Like any good open-source project, fork it, edit it, **test it**, and send a pull request.
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Specific licenses are reserved by these packages. Architecture and framework is licensed under the [MIT license](http://opensource.org/licenses/MIT).
