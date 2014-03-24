@@ -32,6 +32,10 @@ Laravel Sunrise bundles the following packages together to help you get started.
 
         grunt
 
+### Deploying
+
+You can easily deploy this to **Heroku** by reading this [guide](HEROKU.md).
+
 ### Contribute
 
 Like any good open-source project, fork it, edit it, **test it**, and send a pull request.
