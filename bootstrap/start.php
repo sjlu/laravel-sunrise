@@ -26,7 +26,11 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(function()
 {
-  return $_SERVER['ENVIRONMENT'];
+  if (isset($_SERVER['ENVIRONMENT'])) {
+    return $_SERVER['ENVIRONMENT'];
+  }
+
+  return 'production';
 });
 
 /*
